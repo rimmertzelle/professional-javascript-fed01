@@ -1,0 +1,9 @@
+#box {
+  background-color: #FF0000;
+  width: 200px;
+  height: 200px;
+}
+
+#box.blue {
+  background-color: blue;
+}

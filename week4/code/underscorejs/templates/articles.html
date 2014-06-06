@@ -1,0 +1,6 @@
+<% _.each(articles, function(article, index, list){ %>
+<div class="article">
+    <h2><%= article.title %></h2>
+    <img src="<%= article.imageUrl %>" alt="<%= article.title %>"/>
+</div>
+<% }) %>
