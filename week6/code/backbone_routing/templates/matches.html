@@ -1,0 +1,13 @@
+<% _.each(matches, function(match, index, list){ %>
+<div class="match">
+    <div class="teams">
+        <span class="club <%= (match.homeMatch ? 'my-club' : '') %>"><%= match.homeClub %></span>
+        <span class="seperator">-</span>
+        <span class="club <%= (!match.homeMatch ? 'my-club' : '') %>"><%= match.awayClub %></span>
+    </div>
+    <div class="location">
+        <span class="stadium"><%= match.stadium %></span>
+        <span class="city"><%= match.city %></span>
+    </div>
+</div>
+<% }); %>

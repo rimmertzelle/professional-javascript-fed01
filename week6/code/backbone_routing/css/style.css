@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+#container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#container > div {
+    float: left;
+    overflow: auto;
+}
+
+#team-links {
+    width: 150px;
+    margin-top: 10px;
+}
+
+#team-links a {
+    display: block;
+    color: #262626;
+}
+
+#team-matches {
+    width: 850px;
+}
+
+#team-matches .start-message {
+    display: block;
+    margin-top: 10px;
+}
+
+#team-matches .match {
+    width: 375px;
+    margin: 10px 25px;
+    float: left;
+    overflow: auto;
+}
+
+#team-matches .club {
+    color: #245269;
+}
+
+#team-matches .my-club {
+    color: #c9302c;
+}
+
+#team-matches .stadium {
+    font-weight: bold;
+}
+
+#team-matches .city {
+    font-style: italic;
+}
+
+.error {
+    color: #FF0000;
+}
