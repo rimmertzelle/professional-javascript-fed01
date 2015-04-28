@@ -3,4 +3,4 @@
 Please, submit your name in list below.
 
 * Luc Bronsdijk
-* Patrick Bokhove
+* Patrick Bokhove - https://github.com/PatrickBokhove
