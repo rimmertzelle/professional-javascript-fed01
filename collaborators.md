@@ -1,5 +1,5 @@
 ## List of collaborators
 
-Please, submit your name within in list below.
+Please, submit your name in list below.
 
 * Luc Bronsdijk
