@@ -6,3 +6,4 @@ Please, submit your name in list below.
 * Patrick Bokhove - https://github.com/PatrickBokhove
 * Lloyd Keijzer - https://github.com/lloydkeijzer
 * Robert Hegeraad - https://github.com/RobertHegeraad
+* Nick de Ronde - https://github.com/nick3085
