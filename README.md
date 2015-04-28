@@ -1,12 +1,11 @@
 professional-javascript-fed01
 =============================
 
+### updates | week 1 is updated
+As of today all material will be updated. I will let you know which material is updated.
+
 # Welcome
 This repository contains code examples and homework assignments for a javascript course of the media technology program. Unfortunately it is entirely in Dutch ;-)
-
-# updates
-As of today all material will be updated. I will let you know which material is updated.
-**UPDATE** week 1 is updated.
 
 # Great articles / books
 - [Constructors / prototypes / inheritance](http://pivotallabs.com/javascript-constructors-prototypes-and-the-new-keyword/)
