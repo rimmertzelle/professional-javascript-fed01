@@ -1,0 +1,18 @@
+#box {
+  width: 500px;
+  margin: 10px auto;
+  font-size:2em;
+  color:#fff;
+  font-family: Tahoma;
+}
+
+.blue {
+  background-color:#87a3f9;
+}
+
+li{
+  background-color:red;
+  margin: 5px;
+  padding: 10px;
+  list-style: none;
+}
