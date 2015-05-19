@@ -7,16 +7,14 @@
  *    Commenting style: JSDoc
  */
 
-function Ship(owner, weight, cargo){
-
- 
+function Ship(owner, weight, cargo) {
     Transport.call(this, owner, weight);
-    
+
     Object.defineProperty(this, "cargo", {
-        get:function(){
+        get: function () {
             return cargo;
         },
-        set:function(newCargo){
+        set: function (newCargo) {
             cargo = newCargo;
         },
         enumerable: true,
@@ -24,11 +22,10 @@ function Ship(owner, weight, cargo){
     });
 }
 
-//ship extends transport
-Ship.prototype = new Transport(); //Object.create(Transport.prototype);
-Ship.prototype.constructor = Ship; 
+//Ship extends transport
+Ship.prototype = Object.create(Transport.prototype);
 
 /** load new cargo */
-Ship.prototype.load = function(){
+Ship.prototype.load = function () {
     console.log(this.cargo);
-}
+};

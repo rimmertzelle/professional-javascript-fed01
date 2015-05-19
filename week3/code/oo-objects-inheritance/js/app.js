@@ -1,4 +1,4 @@
-var myCar = new Car('Rimmert',30, 'ZJ-GV-02');
+var myCar = new Car('Rimmert', 30, 'ZJ-GV-02');
 
 console.log(myCar);
 myCar.horn('Bleep');

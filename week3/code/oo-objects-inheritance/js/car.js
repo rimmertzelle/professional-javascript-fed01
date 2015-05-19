@@ -7,13 +7,11 @@
  *    Commenting style: JSDoc
  */
 
-function Car(owner, weight, licensePlate){
-
+function Car(owner, weight, licensePlate) {
     Transport.call(this, owner, weight);
-   
+
     this.licensePlate = licensePlate;
 }
 
 //Car extends Transport
-Car.prototype = new Transport();//Object.create(Transport.prototype);
-Car.prototype.constructor = Car;
+Car.prototype = Object.create(Transport.prototype);
