@@ -1,7 +1,7 @@
 professional-javascript-fed01
 =============================
 
-### updates | week 3 is updated
+### updates | week 4 is updated
 As of today all material will be updated. I will let you know which material is updated.
 Update for collaborators will come shortly!
 
