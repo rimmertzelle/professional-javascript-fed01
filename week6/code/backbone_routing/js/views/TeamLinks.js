@@ -3,7 +3,8 @@ site.views.TeamLinks = Backbone.View.extend({
         'click a': 'clickHandler'
     },
 
-    initialize: function (properties) {
+    initialize: function (properties)
+    {
         this.router = properties.router;
     },
 
@@ -12,7 +13,8 @@ site.views.TeamLinks = Backbone.View.extend({
      *
      * @param e
      */
-    clickHandler: function (e) {
+    clickHandler: function (e)
+    {
         e.preventDefault();
         var $target = $(e.currentTarget);
         var url = 'matches/' + $target.data('league') + '/' + $target.data('club');

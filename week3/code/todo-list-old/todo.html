@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My new todo list thing</title>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/todolist.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4">
+                <h1>Todo list</h1>
+                <form role="form">
+                    <div class="form-group">
+                        <label class="sr-only" for="todo-item">Email address</label>
+                        <input type="text" class="form-control" id="todo-item" placeholder="Enter todo item">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Add</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div id="mytodolist" class="col-lg-4 col-lg-offset-4 mytodolist">
+                <h2>To do</h2>
+                <ul id="todo-items" class="list-unstyled">
+                    <li class='todo-item'>item 1</li>
+                    <li class='todo-item'>item 2</li>
+                    <li class='todo-item'>item 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/vendor/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/events.js"></script>
+    <script type="text/javascript" src="assets/js/todolist.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

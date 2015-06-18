@@ -1,13 +1,16 @@
-var site = (function (site) {
+var site = (function (site)
+{
     /**
      * Create toolbar item object with activated/enabled states
      *
      * @param item
      * @returns {*}
      */
-    var createToolbarItem = function (item) {
+    var createToolbarItem = function (item)
+    {
         var newItem = {
-            toggleActiveState: function () {
+            toggleActiveState: function ()
+            {
                 this.activated = !this.activated;
             }
         };
@@ -17,10 +20,12 @@ var site = (function (site) {
                 value: item
             },
             enabled: {
-                get: function () {
+                get: function ()
+                {
                     return !this.el.classList.contains('disabled');
                 },
-                set: function (value) {
+                set: function (value)
+                {
                     if (value) {
                         this.el.classList.remove('disabled');
                     } else {
@@ -29,10 +34,12 @@ var site = (function (site) {
                 }
             },
             activated: {
-                get: function () {
+                get: function ()
+                {
                     return this.el.classList.contains('active');
                 },
-                set: function (value) {
+                set: function (value)
+                {
                     if (value) {
                         this.el.classList.add('active');
                     } else {
@@ -51,10 +58,12 @@ var site = (function (site) {
      * @param itemElements
      * @returns {Array}
      */
-    var createToolbarItems = function (itemElements) {
+    var createToolbarItems = function (itemElements)
+    {
         var items = [];
 
-        [].forEach.call(itemElements, function (item, index, list) {
+        [].forEach.call(itemElements, function (item, index, list)
+        {
             items.push(createToolbarItem(item));
         });
 
@@ -64,7 +73,8 @@ var site = (function (site) {
     /**
      * Create a object with methods on our global namespace
      */
-    site.createToolbar = function (elementId) {
+    site.createToolbar = function (elementId)
+    {
         var toolbar = {};
 
         Object.defineProperties(toolbar, {
@@ -88,7 +98,8 @@ var site = (function (site) {
          *
          * @param arguments
          */
-        toolbar.init = function (arguments) {
+        toolbar.init = function (arguments)
+        {
             //If element doesn't exist, create new toolbar
             if (!this.el) {
                 this.createNew();
@@ -108,7 +119,8 @@ var site = (function (site) {
         /**
          * Create a new DOM element
          */
-        toolbar.createNew = function () {
+        toolbar.createNew = function ()
+        {
             //New element with desired ID & classes
             this.el = document.createElement("div");
             this.el.classList.add("toolbar");
@@ -123,7 +135,8 @@ var site = (function (site) {
         /**
          * Functionality to add a new button to the list
          */
-        toolbar.addButton = function () {
+        toolbar.addButton = function ()
+        {
             var buttonEl = document.createElement("div");
             buttonEl.classList.add("toolbar-item");
             this.el.appendChild(buttonEl);
@@ -135,8 +148,9 @@ var site = (function (site) {
          *
          * @param index
          */
-        toolbar.removeButton = function (index) {
-            if(typeof this.items[index] == "undefined"){
+        toolbar.removeButton = function (index)
+        {
+            if (typeof this.items[index] == "undefined") {
                 return;
             }
 
@@ -149,14 +163,16 @@ var site = (function (site) {
          *
          * @param e
          */
-        toolbar.clickHandler = function (e) {
+        toolbar.clickHandler = function (e)
+        {
             e.preventDefault();
 
             //Some weird logic to check if item has class & inside a filter for === selector on all items and clicked item.. hmmm
             if (e.target.classList.contains('toolbar-item')) {
                 var myItem = {};
 
-                this.items.forEach(function (item, index) {
+                this.items.forEach(function (item, index)
+                {
                     if (item.el === e.target) {
                         myItem = item;
                     }

@@ -9,7 +9,8 @@ site.routers.Matches = Backbone.Router.extend({
      * @param league
      * @param club
      */
-    clubAction: function (league, club) {
+    clubAction: function (league, club)
+    {
         site.events.trigger('newClub', {
             club: club,
             league: league

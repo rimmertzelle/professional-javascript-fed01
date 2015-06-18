@@ -3,7 +3,8 @@ site.views.ClickA = Backbone.View.extend({
         'click': 'clickHandler'
     },
 
-    initialize: function () {
+    initialize: function ()
+    {
 
     },
 
@@ -11,7 +12,8 @@ site.views.ClickA = Backbone.View.extend({
      * @param e
      * @see site.views.ClickA.events
      */
-    clickHandler: function (e) {
+    clickHandler: function (e)
+    {
         e.preventDefault();
         site.events.trigger("boxChange");
     }

@@ -1,10 +1,9 @@
 /**
- *    Represents an Athlete
- *    @param {string} name
- *    @param {string} surname
- *    Commenting style: JSDoc
+ * Represents an Athlete
+ * @param {string} name
+ * @param {string} surname
+ * Commenting style: JSDoc
  */
-
 var athlete = {};
 
 Object.defineProperties(athlete, {
@@ -21,11 +20,13 @@ Object.defineProperties(athlete, {
         writable: true
     },
     name: {
-        get: function () {
+        get: function ()
+        {
             console.log('Reading name');
             return this._name;
         },
-        set: function (value) {
+        set: function (value)
+        {
             if (typeof value != "string") {
                 value = "";
             }
@@ -37,11 +38,13 @@ Object.defineProperties(athlete, {
         configurable: true
     },
     surname: {
-        get: function () {
+        get: function ()
+        {
             console.log('Reading name');
             return this._surname;
         },
-        set: function (value) {
+        set: function (value)
+        {
             console.log('Setting name to %s', value);
             this._surname = value;
         },

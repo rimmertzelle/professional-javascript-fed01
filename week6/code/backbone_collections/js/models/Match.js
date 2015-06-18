@@ -1,3 +1,1 @@
-site.models.Match = Backbone.Model.extend({
-
-});
+site.models.Match = Backbone.Model.extend({});

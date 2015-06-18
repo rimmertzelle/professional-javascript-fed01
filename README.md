@@ -1,9 +1,8 @@
 professional-javascript-fed01
 =============================
 
-### updates | week 5 is updated
-As of today all material will be updated. I will let you know which material is updated.
-Update for collaborators will come shortly!
+### updates | week 6 is updated
+As of today all material are up to date. Even some material from week 1 - 5 is refurbished.
 
 # Welcome
 This repository contains code examples and homework assignments for a javascript course of the media technology program. Unfortunately it is entirely in Dutch ;-)

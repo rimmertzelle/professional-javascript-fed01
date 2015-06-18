@@ -2,7 +2,8 @@ site.views.TeamMatches = Backbone.View.extend({
     templateMatches: _.template(site.settings.templates.matches),
     templateError: _.template(site.settings.templates.error),
 
-    initialize: function () {
+    initialize: function ()
+    {
         site.events.on('newClub', this.loadMatches, this);
     },
 
@@ -11,7 +12,8 @@ site.views.TeamMatches = Backbone.View.extend({
      *
      * @param data
      */
-    loadMatches: function (data) {
+    loadMatches: function (data)
+    {
         this.collection.fetch({
             success: _.bind(this.loadMatchesSuccessHandler, this),
             error: _.bind(this.loadMatchesErrorHandler, this),
@@ -29,7 +31,8 @@ site.views.TeamMatches = Backbone.View.extend({
      * @param response
      * @param options
      */
-    loadMatchesSuccessHandler: function (collection, response, options) {
+    loadMatchesSuccessHandler: function (collection, response, options)
+    {
         this.$el.html(this.templateMatches({matches: response}));
     },
 
@@ -40,7 +43,8 @@ site.views.TeamMatches = Backbone.View.extend({
      * @param response
      * @param options
      */
-    loadMatchesErrorHandler: function (collection, response, options) {
+    loadMatchesErrorHandler: function (collection, response, options)
+    {
         var data = JSON.parse(response.responseText);
         this.$el.html(this.templateError({message: data.error}));
     }

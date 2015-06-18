@@ -1,22 +1,12 @@
 <?php
-$basePath = "/week6/code/backbone_routing/";
-
-//Dynamic PHP code that will normally be stored in some kind of controller
-$templateData = array(
-    'matches' => file_get_contents('templates/matches.html'),
-    'error' => file_get_contents('templates/error.html')
-);
-$settings = json_encode(array(
-    'basePath' => $basePath,
-    'templates' => $templateData
-));
+require_once "includes/initialize.php";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Backbone Routing</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="<?php print $basePath; ?>css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= $basePath; ?>css/style.css"/>
 </head>
 <body>
 <div id="container">
@@ -30,16 +20,16 @@ $settings = json_encode(array(
         <span class="start-message">Choose a team on the left!</span>
     </div>
 </div>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/init.js"></script>
-<script type="text/javascript">site.settings = <?php print $settings; ?>;</script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/models/Match.js"></script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/collections/Matches.js"></script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/routers/Matches.js"></script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/views/TeamLinks.js"></script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/views/TeamMatches.js"></script>
-<script type="text/javascript" src="<?php print $basePath; ?>js/main.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.1/backbone-min.js"></script>
+<script type="text/javascript" src="<?= $basePath; ?>js/init.js"></script>
+<script type="text/javascript">site.settings = <?= $settings; ?>;</script>
+<script type="text/javascript" src="<?= $basePath; ?>js/models/Match.js"></script>
+<script type="text/javascript" src="<?= $basePath; ?>js/collections/Matches.js"></script>
+<script type="text/javascript" src="<?= $basePath; ?>js/routers/Matches.js"></script>
+<script type="text/javascript" src="<?= $basePath; ?>js/views/TeamLinks.js"></script>
+<script type="text/javascript" src="<?= $basePath; ?>js/views/TeamMatches.js"></script>
+<script type="text/javascript" src="<?= $basePath; ?>js/main.js"></script>
 </body>
 </html>

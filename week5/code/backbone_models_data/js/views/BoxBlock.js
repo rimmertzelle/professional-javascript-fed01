@@ -1,12 +1,14 @@
 site.views.BoxBlock = Backbone.View.extend({
-    initialize: function () {
+    initialize: function ()
+    {
         site.events.on("boxChange", this.changeColor, this);
     },
 
     /**
      * @see site.views.BoxBlock.initialize
      */
-    changeColor: function () {
+    changeColor: function ()
+    {
         this.$el.addClass("blue");
         this.loadMatches();
     },
@@ -14,13 +16,14 @@ site.views.BoxBlock = Backbone.View.extend({
     /**
      * Wrapper function to load the matches through the model
      */
-    loadMatches: function () {
+    loadMatches: function ()
+    {
         this.model.fetch({
             success: _.bind(this.loadMatchesSuccessHandler, this),
             error: _.bind(this.loadMatchesErrorHandler, this),
             data: {
                 league: 'PrimeraDivision',
-                club: 'Getefe'
+                club: 'Getafe'
             }
         });
     },
@@ -30,7 +33,8 @@ site.views.BoxBlock = Backbone.View.extend({
      * @param response
      * @param options
      */
-    loadMatchesSuccessHandler: function (model, response, options) {
+    loadMatchesSuccessHandler: function (model, response, options)
+    {
         console.log("SUCCESS");
         console.dir(model);
         console.dir(response);
@@ -42,7 +46,8 @@ site.views.BoxBlock = Backbone.View.extend({
      * @param response
      * @param options
      */
-    loadMatchesErrorHandler: function (model, response, options) {
+    loadMatchesErrorHandler: function (model, response, options)
+    {
         console.log("ERROR");
         console.dir(model);
         console.dir(response);

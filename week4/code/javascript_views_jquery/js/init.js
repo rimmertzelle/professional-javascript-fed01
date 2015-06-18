@@ -1,5 +1,8 @@
-(function () {
+(function ()
+{
+    //Set global vars for later use
     window.site = {};
-    site.$document = $(document);
+    site.$ = jQuery;
+    site.$document = site.$(document);
     site.views = {};
 })();

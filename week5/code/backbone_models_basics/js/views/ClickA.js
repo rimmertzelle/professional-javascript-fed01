@@ -1,11 +1,13 @@
+/**
+ * @constructor
+ */
 site.views.ClickA = Backbone.View.extend({
-    clickToggle: false,
-
     events: {
         'click': 'clickHandler'
     },
 
-    initialize: function () {
+    initialize: function ()
+    {
 
     },
 
@@ -13,10 +15,9 @@ site.views.ClickA = Backbone.View.extend({
      * @param e
      * @see site.views.ClickA.events
      */
-    clickHandler: function (e) {
+    clickHandler: function (e)
+    {
         e.preventDefault();
-
-        this.clickToggle = !this.clickToggle;
-        this.model.set({clickToggle: this.clickToggle});
+        this.model.set({blueColor: !this.model.get('blueColor')});
     }
 });
